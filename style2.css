@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #fdfbff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header with green-red gradient from book */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(to right, #b91c1c, #065f46);
+    /* deep red to deep green */
+    color: white;
+}
+
+main {
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.book-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.book-cover {
+    max-width: 100%;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.book-info {
+    flex: 1;
+}
+
+/* Download Button in Red-Green */
+.download-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #b91c1c;
+    /* deep red */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #065f46;
+    /* deep green */
+}
+
+/* Launch Info Box */
+.launch-info {
+    background: #f0fdf4;
+    padding: 1rem;
+    border-left: 5px solid #065f46;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #e5e7eb;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Hardcopy Request Section */
+.hardcopy-section {
+    margin-top: 3rem;
+    background: #fef2f2;
+    padding: 1rem;
+    border-left: 5px solid #b91c1c;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.hardcopy-flyer {
+    margin-top: 1rem;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Hardcopy Contact Cards */
+.hardcopy-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.contact-card {
+    padding: 1rem;
+    border-left: 5px solid #b91c1c;
+    background-color: #fff1f2;
+    border-radius: 8px;
+}
+
+.contact-card h4 {
+    margin: 0 0 0.5rem;
+    color: #b91c1c;
+}
+
+.contact-card a {
+    color: #065f46;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* Layout for larger screens */
+@media screen and (min-width: 600px) {
+    .hardcopy-contacts {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .contact-card {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .book-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hardcopy-section {
+        text-align: center;
+    }
+
+    .book-cover {
+        margin: 0 auto;
+    }
+}
