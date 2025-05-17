@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #fdfbff;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(to right, #d6459d, #8f42db); /* pink to purple gradient */
+    color: white;
+  }
+  
+  main {
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .book-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  
+  .book-cover {
+    max-width: 100%;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  .book-info {
+    flex: 1;
+  }
+  
+  .download-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #d6459d;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background: #8f42db;
+  }
+  
+  .launch-info {
+    background: #f2e9fc;
+    padding: 1rem;
+    border-left: 5px solid #8f42db;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #eee;
+    font-size: 0.9rem;
+  }
+
+    .hardcopy-section {
+      margin-top: 3rem;
+      background: #fef5ff;
+      padding: 1rem;
+      border-left: 5px solid #d6459d;
+      border-radius: 5px;
+      text-align: center;
+    }
+  
+    .hardcopy-flyer {
+      margin-top: 1rem;
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+    }
+  
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      font-size: 0.9rem;
+      line-height: 1.5; }
+
+            .hardcopy-contacts {
+              display: flex;
+              flex-direction: column;
+              gap: 1.5rem;
+              margin-top: 1rem;
+            }
+      
+            .contact-card {
+              padding: 1rem;
+              border-left: 5px solid #cc2a9f;
+              background-color: #fff0f8;
+              border-radius: 8px;
+            }
+      
+            .contact-card h4 {
+              margin: 0 0 0.5rem;
+              color: #cc2a9f;
+            }
+      
+            .contact-card a {
+              color: #cc2a9f;
+              text-decoration: none;
+              font-weight: bold;
+            }
+      
+            .contact-card a:hover {
+              text-decoration: underline;
+            }
+      
+            @media screen and (min-width: 600px) {
+              .hardcopy-contacts {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+              }
+      
+              .contact-card {
+                flex: 1 1 calc(50% - 1rem);
+              }
+            }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .book-section {
+      flex-direction: column;
+      text-align: center;
+    }
+        .hardcopy-section {
+          flex-direction: column;
+          text-align: center;
+        }
+  
+    .book-cover {
+      margin: 0 auto;
+    }
+  }
+  
