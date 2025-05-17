@@ -85,7 +85,7 @@
   
     .hardcopy-flyer {
       margin-top: 1rem;
-      max-width: 100%;
+      max-width: 50%;
       border-radius: 8px;
       box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
       width: 100%;
